@@ -3,6 +3,8 @@ import styled from '@emotion/styled';
 
 import imagen from './crypto.png';
 
+import Form from './components/Form';
+
 const Container = styled.div `
 	max-width: 900px;
 	margin: 0 auto;
@@ -44,6 +46,8 @@ function App() {
 			</div>
 			<div>
 				<Heading>Quote cryptocurrencies instantly</Heading>
+
+				<Form />
 			</div>
 		</Container>
 	);
