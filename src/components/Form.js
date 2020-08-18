@@ -23,7 +23,14 @@ const Button = styled.input`
 
 
 const Form = () => {
-    const [currency, SelectCurrency, setState] = useCurrency();
+    const CURRENCY = [
+        { code: 'USD', name: 'United States Dollar' },
+        { code: 'ARS', name: 'Argentine Pesos' },
+        { code: 'EUR', name: 'Euro' },
+        { code: 'GBP', name: 'Pound Sterling' }
+    ];
+
+    const [currency, SelectCurrency, setState] = useCurrency('Choose your currency', '', CURRENCY);
 
     return ( 
         <form>
